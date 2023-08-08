@@ -13,7 +13,7 @@ class PurchaseRequest extends RemoteAbstractRequest
 {
     use PurchaseGettersSetters;
 
-    private string $endpoint = '';
+    private string $endpoint = 'https://aeo.ptt.gov.tr/api/Payment/';
 
     protected function validateAll()
     {
