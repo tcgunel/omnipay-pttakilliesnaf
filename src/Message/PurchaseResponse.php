@@ -9,7 +9,7 @@ use Omnipay\PttAkilliEsnaf\Models\ProcessCardFormModel;
 
 class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
 {
-    private string $endpoint = '';
+    private string $endpoint = 'https://aeo.ptt.gov.tr/api/Payment/';
 
     /**
      * @param RequestInterface $request
