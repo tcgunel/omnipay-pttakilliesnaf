@@ -115,13 +115,13 @@ class PurchaseRequest extends RemoteAbstractRequest
 
         $response = json_decode($httpResponse->getBody(), true, 512, JSON_THROW_ON_ERROR);
 
-        $response = new ThreedStartResponseModel($response);
+        if ($httpResponse->getStatusCode() !== 200 || $response['Code'] !== 0) {
 
-        if ($httpResponse->getStatusCode() !== 200 || $response->Code !== 0) {
-
-            throw new ThreedSessionIdException($response->Message, $httpResponse->getStatusCode());
+            throw new ThreedSessionIdException($response['Message'], $httpResponse->getStatusCode());
 
         }
+
+        $response = new ThreedStartResponseModel($response);
 
         return $response;
     }
