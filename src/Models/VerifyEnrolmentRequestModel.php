@@ -17,7 +17,7 @@ class VerifyEnrolmentRequestModel extends BaseModel
 
     public string $ApiPass;
 
-    public string $MdStatus;
+    public ?string $MdStatus;
 
     public string $BankResponseCode;
 

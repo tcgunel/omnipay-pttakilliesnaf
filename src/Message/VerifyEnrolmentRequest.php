@@ -16,7 +16,6 @@ class VerifyEnrolmentRequest extends RemoteAbstractRequest
             'apiUser',
             'apiPass',
             'transactionId',
-            'mdStatus',
             'bankResponseCode',
             'bankResponseMessage',
             'requestStatus',
