@@ -45,4 +45,9 @@ class Gateway extends AbstractGateway
     {
         return $this->createRequest('\Omnipay\PttAkilliEsnaf\Message\VerifyEnrolmentRequest', $parameters);
     }
+
+    public function paymentInquiry(array $parameters = array())
+    {
+        return $this->createRequest('\Omnipay\PttAkilliEsnaf\Message\PaymentInquiryRequest', $parameters);
+    }
 }
