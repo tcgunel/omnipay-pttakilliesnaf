@@ -3,6 +3,7 @@
 namespace Omnipay\PttAkilliEsnaf;
 
 use Omnipay\Common\AbstractGateway;
+use Omnipay\Common\Http\Client;
 use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\PttAkilliEsnaf\Message\BinLookupRequest;
 use Omnipay\PttAkilliEsnaf\Message\PaymentInquiryRequest;
@@ -22,6 +23,19 @@ use Omnipay\PttAkilliEsnaf\Traits\PurchaseGettersSetters;
 class Gateway extends AbstractGateway
 {
     use PurchaseGettersSetters;
+
+    protected function getDefaultHttpClient()
+    {
+        $caBundle = __DIR__ . '/certs/ca-bundle.crt';
+
+        if (class_exists(\GuzzleHttp\Client::class) && file_exists($caBundle)) {
+            $guzzle = new \GuzzleHttp\Client(['verify' => $caBundle]);
+
+            return new Client($guzzle);
+        }
+
+        return new Client();
+    }
 
     public function getName(): string
     {
