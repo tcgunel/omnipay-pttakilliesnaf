@@ -74,7 +74,7 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
 
         $response->setContent(str_replace('</body>', "$script</body>", $response->getContent()));
 
-        $response->setContent(str_replace('<form', "<form role='form'", $response->getContent()));
+        $response->setContent(str_replace('<form', "<form role='form' target='_top'", $response->getContent()));
 
         return $response;
     }
