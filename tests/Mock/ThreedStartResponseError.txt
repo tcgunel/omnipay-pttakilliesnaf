@@ -1,0 +1,7 @@
+HTTP/1.1 400 Bad Request
+Server: Microsoft-IIS/10.0
+Content-Type: application/json; charset=utf-8
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+Content-Length: 80
+
+{"Code":99,"Message":"Gecersiz istek parametreleri","ThreeDSessionId":"","TransactionId":""}

@@ -1,0 +1,12 @@
+{
+  "clientId": "10000000",
+  "apiUser": "apiuser@test.com",
+  "apiPass": "testApiPass123",
+  "transactionId": "PTT-ORD-20240101001",
+  "mdStatus": "1",
+  "bankResponseCode": "00",
+  "bankResponseMessage": "Onaylandi",
+  "requestStatus": "1",
+  "hashParameters": "ClientId,OrderId",
+  "hash": ""
+}

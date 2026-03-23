@@ -1,0 +1,7 @@
+{
+  "clientId": "10000000",
+  "apiUser": "apiuser@test.com",
+  "apiPass": "testApiPass123",
+  "transactionId": "PTT-ORD-20240101001",
+  "testMode": true
+}

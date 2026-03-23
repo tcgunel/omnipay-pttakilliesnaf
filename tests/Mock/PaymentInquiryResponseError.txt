@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/10.0
+Content-Type: application/json; charset=utf-8
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+Content-Length: 120
+
+{"OrderId":"PTT-ORD-20240101001","BankResponseCode":"99","BankResponseMessage":"Islem bulunamadi","Amount":"0","InstallmentCount":0,"TransactionDate":""}

@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/10.0
+Content-Type: application/json; charset=utf-8
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+Content-Length: 350
+
+{"CardPrefix":545616,"BankId":111,"BankCode":"0111","BankName":"QNB Finansbank","CardName":"CardFinans","CardClass":"Credit","CardType":"Visa","Country":"TR","CommissionPackages":[{"PackageName":"Default","InstallmentRate":{"T2":{"Rate":1.5,"Constant":0},"T3":{"Rate":2.5,"Constant":0},"T6":{"Rate":4.0,"Constant":0}}}],"Code":0,"Message":"Success"}

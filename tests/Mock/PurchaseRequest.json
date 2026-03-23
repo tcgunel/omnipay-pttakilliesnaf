@@ -1,0 +1,31 @@
+{
+  "clientId": "10000000",
+  "apiUser": "apiuser@test.com",
+  "apiPass": "testApiPass123",
+  "testMode": true,
+
+  "transactionId": "PTT-ORD-20240101001",
+  "amount": 150.75,
+  "currency": "TRY",
+  "installment": 1,
+  "description": "Test odeme",
+  "echo": "",
+  "extraParameters": "",
+
+  "card": {
+    "firstName": "Ahmet",
+    "lastName": "Yilmaz",
+    "number": "5456165456165454",
+    "expiryMonth": "01",
+    "expiryYear": "2030",
+    "cvv": "123",
+    "billingAddress1": "Ataturk Cad. No:1",
+    "billingCity": "Istanbul",
+    "billingPostcode": "34000",
+    "billingCountry": "TR",
+    "billingPhone": "5551234567"
+  },
+  "clientIp": "127.0.0.1",
+  "returnUrl": "https://example.com/payment/callback",
+  "cancelUrl": "https://example.com/payment/cancel"
+}

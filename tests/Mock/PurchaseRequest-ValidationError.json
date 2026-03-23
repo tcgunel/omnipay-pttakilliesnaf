@@ -1,0 +1,10 @@
+{
+  "clientId": "10000000",
+  "apiUser": "apiuser@test.com",
+  "apiPass": "testApiPass123",
+  "testMode": true,
+
+  "amount": 150.75,
+  "currency": "TRY",
+  "installment": 1
+}
