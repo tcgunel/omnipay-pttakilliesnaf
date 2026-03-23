@@ -47,7 +47,6 @@ class Gateway extends AbstractGateway
         return [
             'installment' => '1',
             'secure' => true,
-            'currency' => 'TRY',
             'description' => '',
             'echo' => '',
             'extraParameters' => '',

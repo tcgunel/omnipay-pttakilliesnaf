@@ -5,8 +5,6 @@ namespace Omnipay\PttAkilliEsnaf\Message;
 use Omnipay\Common\Exception\InvalidCreditCardException;
 use Omnipay\PttAkilliEsnaf\Helpers\Helper;
 use Omnipay\PttAkilliEsnaf\Models\PaymentInquiryModel;
-use Omnipay\PttAkilliEsnaf\Models\RequestHeadersModel;
-use Omnipay\PttAkilliEsnaf\Models\ThreedStartModel;
 use Omnipay\PttAkilliEsnaf\Traits\PurchaseGettersSetters;
 
 class PaymentInquiryRequest extends RemoteAbstractRequest
@@ -32,12 +30,12 @@ class PaymentInquiryRequest extends RemoteAbstractRequest
         }
 
         $payment_inquiry_model = new PaymentInquiryModel([
-            'ClientId'         => $this->getClientId(),
-            'ApiUser'          => $this->getApiUser(),
-            'Rnd'              => str_shuffle(mt_rand(10000000, 99999999)),
-            'TimeSpan'         => date('YmdHis'),
-            'Hash'             => '',
-            'OrderId'          => $this->getTransactionId()
+            'ClientId' => $this->getClientId(),
+            'ApiUser' => $this->getApiUser(),
+            'Rnd' => str_shuffle(mt_rand(10000000, 99999999)),
+            'TimeSpan' => date('YmdHis'),
+            'Hash' => '',
+            'OrderId' => $this->getTransactionId(),
         ]);
 
         $payment_inquiry_model->setHash(

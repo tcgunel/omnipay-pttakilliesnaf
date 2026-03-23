@@ -1,0 +1,81 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Access to an undefined property Omnipay\\\\PttAkilliEsnaf\\\\Gateway\\:\\:\\$endpoint\\.$#"
+			count: 1
+			path: src/Gateway.php
+
+		-
+			message: "#^Call to function is_null\\(\\) with string will always evaluate to false\\.$#"
+			count: 1
+			path: src/Message/BinLookupRequest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function str_shuffle expects string, int\\<10000000, 99999999\\> given\\.$#"
+			count: 1
+			path: src/Message/BinLookupRequest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function str_shuffle expects string, int\\<10000000, 99999999\\> given\\.$#"
+			count: 1
+			path: src/Message/PaymentInquiryRequest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function str_shuffle expects string, int\\<10000000, 99999999\\> given\\.$#"
+			count: 1
+			path: src/Message/PurchaseRequest.php
+
+		-
+			message: "#^Call to an undefined method Omnipay\\\\Common\\\\Message\\\\RequestInterface\\:\\:getTestMode\\(\\)\\.$#"
+			count: 1
+			path: src/Message/PurchaseResponse.php
+
+		-
+			message: "#^Access to an undefined property Omnipay\\\\PttAkilliEsnaf\\\\Message\\\\RemoteAbstractRequest\\:\\:\\$endpoint\\.$#"
+			count: 1
+			path: src/Message/RemoteAbstractRequest.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: src/Message/RemoteAbstractRequest.php
+
+		-
+			message: "#^Access to an undefined property Omnipay\\\\PttAkilliEsnaf\\\\Message\\\\VerifyEnrolmentRequest\\:\\:\\$endpoint\\.$#"
+			count: 1
+			path: src/Message/VerifyEnrolmentRequest.php
+
+		-
+			message: "#^Parameter \\$data of method Omnipay\\\\PttAkilliEsnaf\\\\Message\\\\VerifyEnrolmentRequest\\:\\:sendData\\(\\) has invalid type Omnipay\\\\PttAkilliEsnaf\\\\Message\\\\PurchaseRequestModel\\.$#"
+			count: 1
+			path: src/Message/VerifyEnrolmentRequest.php
+
+		-
+			message: "#^PHPDoc tag @var above a method has no effect\\.$#"
+			count: 1
+			path: src/Message/VerifyEnrolmentResponse.php
+
+		-
+			message: "#^Call to method fromMixed\\(\\) on an unknown class Omnipay\\\\PttAkilliEsnaf\\\\Helpers\\\\XmlDomConstruct\\.$#"
+			count: 1
+			path: src/Models/BaseModel.php
+
+		-
+			message: "#^Call to method saveXML\\(\\) on an unknown class Omnipay\\\\PttAkilliEsnaf\\\\Helpers\\\\XmlDomConstruct\\.$#"
+			count: 1
+			path: src/Models/BaseModel.php
+
+		-
+			message: "#^Instantiated class Omnipay\\\\PttAkilliEsnaf\\\\Helpers\\\\XmlDomConstruct not found\\.$#"
+			count: 1
+			path: src/Models/BaseModel.php
+
+		-
+			message: "#^Parameter \\#2 \\$associative of function json_decode expects bool\\|null, int given\\.$#"
+			count: 2
+			path: src/Models/BaseModel.php
+
+		-
+			message: "#^Binary operation \"\\*\" between string and 100 results in an error\\.$#"
+			count: 1
+			path: src/Models/ThreedStartModel.php

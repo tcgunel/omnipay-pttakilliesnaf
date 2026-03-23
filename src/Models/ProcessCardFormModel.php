@@ -16,5 +16,3 @@ class ProcessCardFormModel extends BaseModel
     public string $Cvv;
 
 }
-
-

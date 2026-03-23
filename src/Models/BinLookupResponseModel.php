@@ -33,6 +33,10 @@ class BinLookupResponseModel extends BaseModel
 
     public function setCommissionPackages(?array $commissonPackages): void
     {
+        if (empty($commissonPackages)) {
+            return;
+        }
+
         foreach ($commissonPackages as $commissonPackage) {
             if (! empty($commissonPackage['InstallmentRate'])) {
                 $rates = [

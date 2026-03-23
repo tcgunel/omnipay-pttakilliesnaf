@@ -34,16 +34,16 @@ class VerifyEnrolmentRequest extends RemoteAbstractRequest
         $this->validateAll();
 
         return new VerifyEnrolmentRequestModel([
-            'OrderId'             => $this->getTransactionId(),
-            'ClientId'            => $this->getClientId(),
-            'ApiUser'             => $this->getApiUser(),
-            'ApiPass'             => $this->getApiPass(),
-            'MdStatus'            => $this->getMdStatus(),
-            'BankResponseCode'    => $this->getBankResponseCode(),
+            'OrderId' => $this->getTransactionId(),
+            'ClientId' => $this->getClientId(),
+            'ApiUser' => $this->getApiUser(),
+            'ApiPass' => $this->getApiPass(),
+            'MdStatus' => $this->getMdStatus(),
+            'BankResponseCode' => $this->getBankResponseCode(),
             'BankResponseMessage' => $this->getBankResponseMessage(),
-            'RequestStatus'       => $this->getRequestStatus(),
-            'HashParameters'      => $this->getHashParameters(),
-            'Hash'                => $this->getHash(),
+            'RequestStatus' => $this->getRequestStatus(),
+            'HashParameters' => $this->getHashParameters(),
+            'Hash' => $this->getHash(),
         ]);
     }
 

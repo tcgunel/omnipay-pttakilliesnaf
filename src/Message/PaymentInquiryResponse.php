@@ -28,7 +28,7 @@ class PaymentInquiryResponse extends AbstractResponse
 
         if ($data instanceof ResponseInterface) {
 
-            $body = (string)$data->getBody();
+            $body = (string) $data->getBody();
 
             try {
 
@@ -42,7 +42,7 @@ class PaymentInquiryResponse extends AbstractResponse
 
                 $this->response = [
                     'Message' => $e->getMessage(),
-                    'data' => $body
+                    'data' => $body,
                 ];
 
             }
@@ -54,7 +54,7 @@ class PaymentInquiryResponse extends AbstractResponse
         return $this->response['BankResponseCode'] === '00';
     }
 
-    public function getData(): bool
+    public function getData(): array
     {
         return $this->response;
     }

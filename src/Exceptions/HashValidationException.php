@@ -2,6 +2,6 @@
 
 namespace Omnipay\PttAkilliEsnaf\Exceptions;
 
-class HashValidationException extends \Exception{
-
+class HashValidationException extends \Exception
+{
 }

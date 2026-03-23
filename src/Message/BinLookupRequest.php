@@ -79,7 +79,7 @@ class BinLookupRequest extends RemoteAbstractRequest
     {
         $httpResponse = $this->httpClient->request(
             'POST',
-            $this->getEndpoint().'GetCommissionAndInstallmentInfo',
+            $this->getEndpoint() . 'GetCommissionAndInstallmentInfo',
             [
                 'Content-Type' => 'application/json',
                 'Accept' => 'application/json',

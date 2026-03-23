@@ -118,7 +118,7 @@ class ThreedStartModel extends BaseModel
     {
         $this->InstallmentCount = min($InstallmentCount, 12);
 
-        if ($this->InstallmentCount === 1){
+        if ($this->InstallmentCount === 1) {
 
             $this->InstallmentCount = 0;
 

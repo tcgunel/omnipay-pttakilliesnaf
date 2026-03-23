@@ -9,20 +9,20 @@ trait PurchaseGettersSetters
         return $this->setParameter('clientId', $value);
     }
 
-	public function getClientId()
-	{
-		return $this->getParameter('clientId');
-	}
+    public function getClientId()
+    {
+        return $this->getParameter('clientId');
+    }
 
     public function setApiUser($value)
     {
         return $this->setParameter('apiUser', $value);
     }
 
-	public function getApiUser()
-	{
-		return $this->getParameter('apiUser');
-	}
+    public function getApiUser()
+    {
+        return $this->getParameter('apiUser');
+    }
 
 
     public function setApiPass($value)
@@ -30,40 +30,40 @@ trait PurchaseGettersSetters
         return $this->setParameter('apiPass', $value);
     }
 
-	public function getApiPass()
-	{
-		return $this->getParameter('apiPass');
-	}
+    public function getApiPass()
+    {
+        return $this->getParameter('apiPass');
+    }
 
     public function setDescription($value)
     {
         return $this->setParameter('description', $value);
     }
 
-	public function getDescription()
-	{
-		return $this->getParameter('description');
-	}
+    public function getDescription()
+    {
+        return $this->getParameter('description');
+    }
 
     public function setEcho($value)
     {
         return $this->setParameter('echo', $value);
     }
 
-	public function getEcho()
-	{
-		return $this->getParameter('echo');
-	}
+    public function getEcho()
+    {
+        return $this->getParameter('echo');
+    }
 
     public function setSecure($value)
     {
         return $this->setParameter('secure', $value);
     }
 
-	public function getSecure()
-	{
-		return $this->getParameter('secure');
-	}
+    public function getSecure()
+    {
+        return $this->getParameter('secure');
+    }
 
     public function getEndpoint()
     {

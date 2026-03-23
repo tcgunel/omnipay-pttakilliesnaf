@@ -2,6 +2,6 @@
 
 namespace Omnipay\PttAkilliEsnaf\Exceptions;
 
-class ThreedSessionIdException extends \Exception{
-
+class ThreedSessionIdException extends \Exception
+{
 }

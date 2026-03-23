@@ -26,7 +26,6 @@ class PurchaseRequest extends RemoteAbstractRequest
             'amount',
             'currency',
             'installment',
-
             'card',
         );
     }
@@ -49,20 +48,20 @@ class PurchaseRequest extends RemoteAbstractRequest
         }
 
         $threed_start_model = new ThreedStartModel([
-            'ClientId'         => $this->getClientId(),
-            'ApiUser'          => $this->getApiUser(),
-            'Rnd'              => str_shuffle(mt_rand(10000000, 99999999)),
-            'TimeSpan'         => date('YmdHis'),
-            'Hash'             => '',
-            'CallbackUrl'      => $this->getReturnUrl(),
-            'OrderId'          => $this->getTransactionId(),
-            'Amount'           => $this->getAmount(),
-            'Currency'         => $this->getCurrency(),
+            'ClientId' => $this->getClientId(),
+            'ApiUser' => $this->getApiUser(),
+            'Rnd' => str_shuffle(mt_rand(10000000, 99999999)),
+            'TimeSpan' => date('YmdHis'),
+            'Hash' => '',
+            'CallbackUrl' => $this->getReturnUrl(),
+            'OrderId' => $this->getTransactionId(),
+            'Amount' => $this->getAmount(),
+            'Currency' => $this->getCurrency(),
             'InstallmentCount' => $this->getInstallment(),
-            'Description'      => $this->getDescription(),
-            'Echo'             => $this->getEcho(),
-            'ExtraParameters'  => $this->getExtraParameters(),
-            'ThreeDSessionId'  => '',
+            'Description' => $this->getDescription(),
+            'Echo' => $this->getEcho(),
+            'ExtraParameters' => $this->getExtraParameters(),
+            'ThreeDSessionId' => '',
         ]);
 
         $threed_start_model->setHash(
@@ -93,9 +92,9 @@ class PurchaseRequest extends RemoteAbstractRequest
         $process_card_form_model = new ProcessCardFormModel([
             'ThreeDSessionId' => $data->ThreeDSessionId,
             'CardHolderName' => $this->getCard()->getName(),
-            'CardNo'         => $this->getCard()->getNumber(),
-            'ExpireDate'     => $this->getCard()->getExpiryDate('m/y'),
-            'Cvv'            => $this->getCard()->getCvv(),
+            'CardNo' => $this->getCard()->getNumber(),
+            'ExpireDate' => $this->getCard()->getExpiryDate('m/y'),
+            'Cvv' => $this->getCard()->getCvv(),
         ]);
 
         return $this->createResponse($process_card_form_model);
@@ -108,7 +107,7 @@ class PurchaseRequest extends RemoteAbstractRequest
             $this->getEndpoint() . 'threeDPayment',
             [
                 'Content-Type' => 'application/json',
-                'Accept'       => 'application/json',
+                'Accept' => 'application/json',
             ],
             json_encode($threedStartModel)
         );

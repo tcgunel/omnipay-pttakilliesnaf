@@ -37,7 +37,7 @@ class VerifyEnrolmentResponse extends AbstractResponse
             $hashString .= $this->data->$key;
         }
 
-        if ($this->data->Hash !== base64_encode(hash('sha512', $hashString, true))){
+        if ($this->data->Hash !== base64_encode(hash('sha512', $hashString, true))) {
 
             throw new HashValidationException('Hash validation error.', 401);
 

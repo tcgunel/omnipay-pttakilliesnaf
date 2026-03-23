@@ -29,7 +29,7 @@ class BinLookupResponse extends AbstractResponse
 
         if ($data instanceof ResponseInterface) {
 
-            $body = (string)$data->getBody();
+            $body = (string) $data->getBody();
 
             try {
 
@@ -39,7 +39,7 @@ class BinLookupResponse extends AbstractResponse
 
                 $this->response = [
                     'Message' => $e->getMessage(),
-                    'data' => $body
+                    'data' => $body,
                 ];
 
             }
